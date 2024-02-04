@@ -1,0 +1,94 @@
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline::before {
+    content: ' ';
+    background: #2A9D8F;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 4px; /* Augmente l'épaisseur de la timeline à 4px */
+    border-radius: 2px; /* Add this line to make the timeline line rounded */
+    
+    height: 100%;
+    z-index: 400;
+    right: 49px; /* Augmente la marge à gauche à 49px */
+    
+    /* autres styles */
+}
+
+.timeline li {
+    margin: 20px 0;
+    padding-left: 40px; /* Augmente la marge à gauche à 40px */
+    border: 2px solid #2A9D8F;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    margin-left: 50px;
+    
+    /* autres styles */
+    
+}
+
+.timeline li a {
+    text-decoration: none; /* Remove the underline from the links */
+    color: inherit; /* Optional: make the link color the same as the text color */
+}
+
+.timeline li::before {
+    content: ' ';
+    background-color: #264653; /* Utilisez la couleur comme couleur de fond */
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #E76F51; /* Utilisez la couleur pour la bordure des points de la timeline */
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    
+}
+.navbar {
+    padding: 10px 0; /* Ajoute un padding vertical de 10px */
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        justify-content: center; /* Centre le contenu horizontalement sur les grands écrans */
+    }
+}
+
+.navbar-nav {
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.bg-light {
+    background-color: #2A9D8F !important;
+}
+
+body {
+    background-color: #264653; /* Utilisez la couleur comme couleur de fond */
+}
+
+h1,h2{
+    color: #E9C46A; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+h3{
+    color: #e76f51; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+h4, h5, h6 {
+    color: #2A9D8F; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+a {
+    color: #e76f51; /* Utilisez la couleur pour les liens */
+}
+
+p {
+    color: #E8E4B4; /* Utilisez la couleur pour le texte des paragraphes */
+}
