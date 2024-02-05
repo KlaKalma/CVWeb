@@ -1,0 +1,454 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #173b6c;
+}
+
+a {
+  color: #E9C46A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E76F51;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #149ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #2eafec;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.2s;
+    z-index: 9997;
+    transition: all 0.2s;
+    padding: 0 15px;
+    background: #264653;
+    overflow-y: auto;
+    border-right: 1px solid #E76F51;
+  }
+  
+  #header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #E9C46A;
+  }
+  
+  #header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .profile h1 a,
+  #header .profile h1 a:hover {
+    color: #e76f51;
+    text-decoration: none;
+  }
+  
+  #header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    background: none;
+    color: #E8E4B4;
+    line-height: 1;
+    padding: 6px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #E76F51;
+  }
+  
+  #header .profile .social-links a:hover {
+    background: #E76F51;
+    color: #E8E4B4;
+    text-decoration: none;
+    
+  }
+  
+  #main {
+    margin-left: 300px;
+  }
+  
+  .container,
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    #main {
+      margin-left: 0;
+    }
+  
+    .container,
+    .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+    padding: 30px 0 0 0;
+    left: 0; /* Align to the left */
+  }
+  
+  .nav-menu * {
+    margin: 0;
+    padding: 0;
+    text-align: lef;
+    list-style: none;
+  }
+  
+  .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .nav-menu a,
+  .nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    /* padding: 2px 5px; */
+    justify-content: center; /* Add this line */
+    color: #E9C46A;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+
+  .nav-menu a i,
+  .nav-menu a:focus i {
+    
+    padding-top: 0; /* Set padding to 0 */
+    font-size: 28px;
+    padding-right: 8px;
+    color: #E9C46A;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus,
+  .nav-menu li:hover>a {
+    text-decoration: none;
+    color: #E76F51;
+  }
+  
+  .nav-menu a:hover i,
+  .nav-menu .active i,
+  .nav-menu .active:focus i,
+  .nav-menu li:hover>a i {
+    color: #E76F51;
+  }
+  
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #E9C46A;
+    color: #2A9D8F;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+  
+  .mobile-nav-active #header {
+    left: 0;
+  }
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/PP-de-dos.jpg") top center;
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(38, 70, 83, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #E76F51;
+}
+
+#hero p {
+  color: #E9C46A;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #E9C46A;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #2A9D8F;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero p {
+    font-size: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Timeline
+--------------------------------------------------------------*/
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline::before {
+    content: ' ';
+    background: #2A9D8F;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 4px; /* Augmente l'épaisseur de la timeline à 4px */
+    border-radius: 2px; /* Add this line to make the timeline line rounded */
+    
+    height: 100%;
+    z-index: 400;
+    right: 49px; /* Augmente la marge à gauche à 49px */
+    
+    /* autres styles */
+}
+
+.timeline li {
+    margin: 20px 0;
+    padding-left: 40px; /* Augmente la marge à gauche à 40px */
+    border: 2px solid #2A9D8F;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    margin-left: 50px;
+    
+    /* autres styles */
+    
+}
+
+.timeline li a {
+    text-decoration: none; /* Remove the underline from the links */
+    color: inherit; /* Optional: make the link color the same as the text color */
+}
+
+.timeline li::before {
+    content: ' ';
+    background-color: #264653; /* Utilisez la couleur comme couleur de fond */
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #E76F51; /* Utilisez la couleur pour la bordure des points de la timeline */
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    
+}
+.navbar {
+    padding: 10px 0; /* Ajoute un padding vertical de 10px */
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        justify-content: center; /* Centre le contenu horizontalement sur les grands écrans */
+    }
+}
+
+.navbar-nav {
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.bg-light {
+    background-color: #2A9D8F !important;
+}
+
+body {
+    background-color: #264653; /* Utilisez la couleur comme couleur de fond */
+}
+
+h1,h2{
+    color: #E9C46A; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+h3{
+    color: #e76f51; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+h4, h5, h6 {
+    color: #2A9D8F; /* Utilisez la couleur pour le texte des en-têtes */
+}
+
+a {
+    color: #e76f51; /* Utilisez la couleur pour les liens */
+}
+
+p {
+    color: #E8E4B4; /* Utilisez la couleur pour le texte des paragraphes */
+}
