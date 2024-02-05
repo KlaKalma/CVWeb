@@ -49,8 +49,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+  background: #2A9D8F;
+  color: #E76F51;
 }
 
 .back-to-top.active {
@@ -97,7 +97,7 @@ h6 {
   
   #header .profile h1 a,
   #header .profile h1 a:hover {
-    color: #e76f51;
+    color: #E76F51;
     text-decoration: none;
   }
   
@@ -331,7 +331,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -391,6 +391,70 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+.facts {
+  padding-bottom: 30px;
+}
+
+.facts .count-box {
+  padding: 15px;
+  width: 100%;
+  /* float: left; */
+  font-size: 50px;
+}
+
+.facts .count-box i {
+  /* display: flex; */
+  color: #E8E4B4;
+  /* float: left; */
+  line-height: 0;
+}
+
+.facts .count-box span {
+  /* font-size: 44px; */
+  line-height: 40px;
+  /* display: flex; */
+  font-weight: 700;
+  color: #E9C46A;
+  margin: 0 15px;
+  /* margin-right: 60px; */
+}
+
+.facts .count-box .unit {
+  /* display: flex; */
+  /* font-size: 44px; */
+  color: #E8E4B4;
+  /* float: right; */
+  line-height: 40px;
+  margin: 0;
+}
+
+.facts .count-box p {
+  padding: 15px 0 15px 0;
+  margin: 0 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #E8E4B4;
+}
+
+.facts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #E76F51;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+.facts .count-box a:hover {
+  color: #E76F51;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -477,7 +541,7 @@ h1,h2{
 }
 
 h3{
-    color: #e76f51; /* Utilisez la couleur pour le texte des en-têtes */
+    color: #E76F51; /* Utilisez la couleur pour le texte des en-têtes */
 }
 
 h4, h5, h6 {
@@ -485,7 +549,7 @@ h4, h5, h6 {
 }
 
 a {
-    color: #e76f51; /* Utilisez la couleur pour les liens */
+    color: #E76F51; /* Utilisez la couleur pour les liens */
 }
 
 p {
