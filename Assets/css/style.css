@@ -434,7 +434,7 @@ section {
   /* display: flex; */
   font-weight: 700;
   color: #E9C46A;
-  margin: 0 15px;
+  margin: 0 15px 0 0;
   /* margin-right: 60px; */
 }
 
@@ -469,6 +469,77 @@ section {
   color: #E76F51;
 }
 
+
+/*--------------------------------------------------------------
+# Curriculum
+--------------------------------------------------------------*/
+.curriculum {
+  padding-bottom: 30px;
+}
+
+.curriculum .count-box {
+  padding: 15px;
+  width: 100%;
+  /* float: left; */
+  font-size: 50px;
+}
+
+.curriculum .count-box i {
+  /* display: flex; */
+  color: #E8E4B4;
+  /* float: left; */
+  line-height: 0;
+}
+
+.curriculum .count-box span {
+  /* font-size: 44px; */
+  line-height: 40px;
+  /* display: flex; */
+  font-weight: 700;
+  color: #E9C46A;
+  margin: 0;
+  /* margin-right: 60px; */
+}
+
+.curriculum .count-box .unit {
+  /* display: flex; */
+  /* font-size: 44px; */
+  color: #E8E4B4;
+  /* float: right; */
+  line-height: 40px;
+  margin: 0 15px;
+}
+
+.curriculum .count-box .school-name {
+  /* display: flex; */
+  font-size: 20px;
+  color: #E8E4B4;
+  /* float: right; */
+  line-height: 20px;
+  margin: 0 15px;
+}
+
+.curriculum .count-box p {
+  padding: 15px 0 15px 0;
+  margin: 0 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #E8E4B4;
+}
+
+.curriculum .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  color: #E76F51;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+.curriculum .count-box a:hover {
+  color: #E76F51;
+}
 
 
 /*--------------------------------------------------------------
