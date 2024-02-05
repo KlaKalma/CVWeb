@@ -202,6 +202,7 @@ h6 {
   .nav-menu li:hover>a {
     text-decoration: none;
     color: #E76F51;
+    border-left: #E76F51 solid 5px;
   }
   
   .nav-menu a:hover i,
@@ -209,6 +210,7 @@ h6 {
   .nav-menu .active:focus i,
   .nav-menu li:hover>a i {
     color: #E76F51;
+    
   }
   
   /* Mobile Navigation */
@@ -322,9 +324,12 @@ section {
   overflow: hidden;
 }
 
+
+
 .section-bg {
-  background: #f5f8fd;
+  background: #264653;
 }
+
 
 .section-title {
   padding-bottom: 30px;
@@ -354,6 +359,15 @@ section {
   margin-bottom: 0;
 }
 
+/* hr {
+  border: none;
+  border-top: 1px solid #2A9D8F; 
+  color: #2A9D8F;
+  overflow: visible;
+  text-align: center;
+  height: 1px;
+  width: 50%; 
+} */
  
  
 /*--------------------------------------------------------------
@@ -394,27 +408,27 @@ section {
 
 
 /*--------------------------------------------------------------
-# Facts
+# HardSkills
 --------------------------------------------------------------*/
-.facts {
+.hardSkills {
   padding-bottom: 30px;
 }
 
-.facts .count-box {
+.hardSkills .count-box {
   padding: 15px;
   width: 100%;
   /* float: left; */
   font-size: 50px;
 }
 
-.facts .count-box i {
+.hardSkills .count-box i {
   /* display: flex; */
   color: #E8E4B4;
   /* float: left; */
   line-height: 0;
 }
 
-.facts .count-box span {
+.hardSkills .count-box span {
   /* font-size: 44px; */
   line-height: 40px;
   /* display: flex; */
@@ -424,7 +438,7 @@ section {
   /* margin-right: 60px; */
 }
 
-.facts .count-box .unit {
+.hardSkills .count-box .unit {
   /* display: flex; */
   /* font-size: 44px; */
   color: #E8E4B4;
@@ -433,7 +447,7 @@ section {
   margin: 0;
 }
 
-.facts .count-box p {
+.hardSkills .count-box p {
   padding: 15px 0 15px 0;
   margin: 0 0 0 0;
   font-family: "Raleway", sans-serif;
@@ -441,7 +455,7 @@ section {
   color: #E8E4B4;
 }
 
-.facts .count-box a {
+.hardSkills .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
@@ -451,7 +465,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.facts .count-box a:hover {
+.hardSkills .count-box a:hover {
   color: #E76F51;
 }
 
