@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Helvetica", sans-serif;
-  color: #173b6c;
+  color: #E8E4B4;
 }
 
 a {
@@ -35,7 +35,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #264653;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -44,7 +44,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #E8E4B4;
   line-height: 0;
 }
 
@@ -158,7 +158,7 @@ h6 {
 /* Desktop Navigation */
 .nav-menu {
     padding: 30px 0 0 0;
-    left: 0; /* Align to the left */
+    /* left: 0; Align to the left */
   }
   
   .nav-menu * {
@@ -336,7 +336,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #E9C46A;
 }
 
 .section-title h2::after {
@@ -345,7 +345,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #2A9D8F;
   bottom: 0;
   left: 0;
 }
@@ -353,6 +353,44 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #E9C46A;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #E76F51;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Timeline
