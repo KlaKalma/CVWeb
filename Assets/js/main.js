@@ -254,15 +254,14 @@
       })
     });
   
-    // /**
-    //  * Initiate Pure Counter 
-    //  */
+    /**
+     * Initiate Pure Counter 
+     */
     new PureCounter();
 
     /**
      * Initiate map
      */
-
     var countries = {
       
       ZA: "Lived",
