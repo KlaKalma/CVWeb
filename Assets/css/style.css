@@ -290,7 +290,7 @@ h6 {
 #hero p {
   color: #E9C46A;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 40px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -413,6 +413,21 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about button {
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 0;
+  color: #E8E4B4;
+  background: #2A9D8F;
+  border: 2px solid #2A9D8F;
+  margin-top: 20px;
+
 }
 
 
