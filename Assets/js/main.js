@@ -318,7 +318,7 @@
         regions: [{
           attribute: "fill",
           legend: {
-            title: "Countries",
+            // title: "Countries",
             fill: "#E8E4B4",
             color: "#676767"
           },
