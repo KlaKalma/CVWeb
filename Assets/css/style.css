@@ -654,11 +654,13 @@ section {
   font-weight: bold;
   z-index: 9999;
   visibility: hidden;
+  opacity: 0;
 }
 
 .portfolio .portfolio-wrap:hover .link-icon {
   visibility: visible;
-  
+  /* background-color: #E9C46A; */
+  opacity: 1;
   transition: all ease-in-out 1s;
 }
 

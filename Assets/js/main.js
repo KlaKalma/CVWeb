@@ -258,5 +258,83 @@
     //  * Initiate Pure Counter 
     //  */
     new PureCounter();
+
+    /**
+     * Initiate map
+     */
+
+    var countries = {
+      
+      ZA: "Lived",
+      FR: "Lived",
+      CH: "Lived",
+      CA: "Lived",
+      KR: "Lived",
+      LS: "Visited",
+      SZ: "Visited",
+      MZ: "Visited",
+      ES: "Visited",
+      IT: "Visited",
+      LU: "Visited",
+      BE: "Visited",
+      DE: "Visited",
+
+      AT: "Visited",
+      GB: "Visited",
+      NL: "Visited",
+      GR: "Visited",
+      SI: "Visited",
+      HU: "Visited",
+      SK: "Visited",
+      PL: "Visited",
+      CZ: "Visited",
+      HR: "Visited",
+      
+      OM: "Visited",
+      AE: "Visited",
+      QA: "Visited",
+
+      MX: "Visited",
+      US: "Visited",
+      DO: "Visited",
+      LS: "Visited",
+
+      JP: "Visited",
+      ID: "Visited",
+    }
+
+    var map = new jsVectorMap({
+      selector: "#map",
+      map: "world",
+      regionStyle: {
+        initial: {
+          fill: '#E8E4B4',
+          stroke: "#676767",
+          strokeWidth: 0,
+          fillOpacity: 1
+        }
+      },
+      series: {
+        regions: [{
+          attribute: "fill",
+          legend: {
+            title: "Some title",
+          },
+          scale: {
+            Visited: "#E9C46A",
+            Lived: "#E76F51",
+          },
+          values: countries,
+        }]
+      },
+      onRegionTooltipShow(event, tooltip, code) {
+        tooltip.text(
+          `<p>${code}</p>` +
+          `<p>${tooltip.text()}.</p>`,
+          true // Enables HTML
+        )
+      }
+ 
+    });
   
   })()
