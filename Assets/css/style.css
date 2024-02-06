@@ -591,7 +591,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(38, 70, 83, 0.5);
+  background: rgba(38, 70, 83, 0.8);
   position: absolute;
   left: 0;
   right: 0;
@@ -628,7 +628,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #E76F51;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -644,7 +644,23 @@ section {
   bottom: 0;
 }
 
+.portfolio .link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* add your desired styles for the icon */
+  font-size: 70px;
+  font-weight: bold;
+  z-index: 9999;
+  visibility: hidden;
+}
 
+.portfolio .portfolio-wrap:hover .link-icon {
+  visibility: visible;
+  
+  transition: all ease-in-out 1s;
+}
 
 /*--------------------------------------------------------------
 # Timeline
