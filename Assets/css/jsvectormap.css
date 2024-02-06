@@ -21,7 +21,7 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 .jvm-tooltip {
   border-radius: 3px;
-  background-color: #5c5cff;
+  background-color: #2A9D8F;
   font-family: sans-serif, Verdana;
   font-size: smaller;
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@ image, text, .jvm-zoomin, .jvm-zoomout {
   white-space: nowrap;
   position: absolute;
   display: none;
-  color: #FFF;
+  color: #E8E4B4;
 }
 
 .jvm-tooltip.active {
@@ -38,13 +38,13 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 .jvm-zoom-btn {
   border-radius: 3px;
-  background-color: #292929;
+  background-color: #2A9D8F;
   padding: 3px;
   box-sizing: border-box;
   position: absolute;
   line-height: 10px;
   cursor: pointer;
-  color: #FFF;
+  color: #E8E4B4;
   height: 15px;
   width: 15px;
   left: 10px;
@@ -72,11 +72,11 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 }
 
 .jvm-series-container .jvm-legend {
-  background-color: #FFF;
-  border: 1px solid #e5e7eb;
+  background-color: #264653;
+  border: 1px solid #E9C46A;
   margin-left: 0.75rem;
   border-radius: 0.25rem;
-  border-color: #e5e7eb;
+  border-color: #E9C46A;
   padding: 0.6rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   float: left;
@@ -84,7 +84,7 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 .jvm-series-container .jvm-legend .jvm-legend-title {
   line-height: 1;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #E8E4B4;
   padding-bottom: 0.5rem;
   margin-bottom: 0.575rem;
   text-align: left;

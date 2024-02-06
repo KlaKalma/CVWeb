@@ -318,7 +318,9 @@
         regions: [{
           attribute: "fill",
           legend: {
-            title: "Some title",
+            title: "Countries",
+            fill: "#E8E4B4",
+            color: "#676767"
           },
           scale: {
             Visited: "#E9C46A",
@@ -327,13 +329,13 @@
           values: countries,
         }]
       },
-      onRegionTooltipShow(event, tooltip, code) {
-        tooltip.text(
-          `<p>${code}</p>` +
-          `<p>${tooltip.text()}.</p>`,
-          true // Enables HTML
-        )
-      }
+      // onRegionTooltipShow(event, tooltip, code) {
+      //   tooltip.text(
+      //     `<p>${code}</p>` +
+      //     `<p>${tooltip.css({ backgroundColor: '$264653', color: '#E8E4B4' }).text()}.</p>`,
+      //     true // Enables HTML
+      //   )
+      // }
  
     });
   
