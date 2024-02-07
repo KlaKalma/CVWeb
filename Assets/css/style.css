@@ -285,6 +285,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #E76F51;
+  z-index: 9997;
 }
 
 #hero p {
@@ -292,6 +293,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 40px;
   font-family: "Poppins", sans-serif;
+  z-index: 9997;
 }
 
 #hero p span {
@@ -299,6 +301,7 @@ h6 {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #2A9D8F;
+  z-index: 9997;
 }
 
 @media (min-width: 1024px) {
