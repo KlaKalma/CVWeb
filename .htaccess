@@ -1,0 +1,6 @@
+RewriteEngine On
+# If the requested filename exists as a .html file
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+# Internally rewrite the request to the .html file
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]
