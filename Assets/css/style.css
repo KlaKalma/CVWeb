@@ -586,8 +586,10 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #E8E4B4;
-  border-radius: 50px;
+  background: #2A9D8F;
+  
+  /* border: 3px solid #2A9D8F; */
+  border-radius: 20px;
   padding: 2px 15px;
 }
 
@@ -599,14 +601,15 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #264653;
+  color: #E8E4B4;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #E9C46A;
+  color: #E76F51;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -618,6 +621,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: 2px solid #E76F51;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -694,6 +698,19 @@ section {
   opacity: 1;
   transition: all ease-in-out 1s;
 }
+
+
+.portfolio .portfolio-wrap h3 {
+  color: #E9C46A;
+  font-size: 28px;
+  text-align: center;
+}
+
+
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
 
 
 mapDiv{
