@@ -706,6 +706,9 @@ section {
   text-align: center;
 }
 
+.portfolio-detail .portfolio-wrap:hover::before {
+  opacity: 0;
+}
 
 
 /*--------------------------------------------------------------
