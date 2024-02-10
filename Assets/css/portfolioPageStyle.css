@@ -24,3 +24,21 @@
     margin-bottom: 0px;
     padding: 0px;
 }
+
+.portfolio-title .portfolio-detail-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid #E76F51;
+}
+
+.portfolio .portfolio-detail-wrap h3 {
+    color: #E9C46A;
+    font-size: 28px;
+    text-align: center;
+}
+
+.portfolio .portfolio-detail-wrap p {
+    text-align: justify;
+}
