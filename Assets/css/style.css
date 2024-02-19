@@ -607,6 +607,11 @@ section {
   
 }
 
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #E76F51;
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -627,6 +632,7 @@ section {
   z-index: 2;
   opacity: 0;
 }
+
 
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
