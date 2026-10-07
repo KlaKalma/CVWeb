@@ -94,3 +94,10 @@
     border: 0;
     transform-origin: 0 0;
 }
+
+.portfolio-title .project-age {
+    color: #E9C46A;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}

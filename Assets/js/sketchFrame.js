@@ -21,6 +21,11 @@ document.querySelectorAll('.sketch-frame').forEach(function (box) {
     frame.width = width;
     frame.height = height;
     frame.title = 'Live simulation';
+    frame.setAttribute('scrolling', 'no');
+    // no scroll bars around the sketch (same site, so the frame can be styled from here)
+    frame.addEventListener('load', function () {
+      try { frame.contentDocument.documentElement.style.overflow = 'hidden'; } catch (e) {}
+    });
     box.appendChild(frame);
     fit();
   }
