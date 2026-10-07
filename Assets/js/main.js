@@ -303,7 +303,8 @@
       ID: "Visited",
     }
 
-    var map = new jsVectorMap({
+    // only the home page has a map
+    if (document.getElementById('map')) new jsVectorMap({
       selector: "#map",
       map: "world",
       regionStyle: {
