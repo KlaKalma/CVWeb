@@ -42,3 +42,17 @@
 .portfolio .portfolio-detail-wrap p {
     text-align: justify;
 }
+
+/*--------------------------------------------------------------
+# Videos
+--------------------------------------------------------------*/
+.portfolio-detail-wrap .video-embed {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.portfolio-detail-wrap .video-short {
+    aspect-ratio: 9 / 16;
+}
