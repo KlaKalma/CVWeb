@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarence LINDEN</title>
+    <title>Stochastic gearbox | Clarence LINDEN</title>
 
     
     <!-- Favicons -->
@@ -57,7 +57,7 @@
 
         <ol>
           <li><a href="../index.html">Home</a></li>
-          <li>Racing Team</li>
+          <li>Stochastic gearbox</li>
         </ol>
  
       </div>
@@ -66,17 +66,17 @@
     <section id="portfolio-title" class="portfolio-title portfolio section-bg">
       <div class="container">
         <div class="section-title">
-          <h1>Racing Team</h1>
+          <h1>Stochastic gearbox</h1>
           <div class="row">
             <div class="col-12 col-lg-4">
-              <img src="../Assets/img/Portfolio/1-RacingTeam.png" loading="lazy" class="img-fluid" alt="">
+              <img src="../Assets/img/Portfolio/7-StochasticGearboc.png" loading="lazy" class="img-fluid" alt="Stochastic gearbox">
             </div>
             <div class="col-12 col-lg-8">
               <p>
-                As a Design Engineer with the EPFL Racing Team, I specialized in crafting innovative components crucial to our Formula Student racing endeavors. Collaborating within the largest team I've worked with, consisting of 90 individuals focused on a singular goal, I transformed conceptual designs into high-performance solutions, optimizing our vehicle for competitive success. From initial sketches to final production, I honed my skills in precision engineering and teamwork, ensuring our car remained at the forefront of technological advancement. My tenure with the EPFL Racing Team has fortified my commitment to excellence and equipped me with the expertise to tackle future engineering challenges with confidence and proficiency.
+                In the Data driven design course, I treated the design of a gearbox as an optimisation problem. Instead of choosing the gear ratios by hand, I wrote a Python program that describes a gearbox as a graph of shafts and gears, generates random gearboxes, and lets a genetic algorithm evolve them. Each gearbox has its own DNA, which is mutated and crossed over generation after generation to keep only the best designs.
               </p>
               <p>
-                I am proudly part of the Power electronics team, but as a mechanical engineer, which means that most of the mechanical task that the team has to face is my responsibility. My first and main job was to design, simulate, build and test the cooling block of the VSI, the controler for the 4 motors of the car. With this I learned new techniques of CFD (computational fluid dynamics), with heat transfer and fluid dynamics coupled. I also learned how to program a mill to machine the part, to work with many team members from every other team, and to manage my time and my tasks. On top of the cooling block, the team made me work in close relationship with Pedro leal Chede, to make a test bench for the motor and VSI cooling. I also had to design many other small mechanical parts that the power electronics team needed.
+                To judge each gearbox, the program simulates a full acceleration from 0 to 200 km/h. It uses real engine curves (torque, power and fuel consumption), air resistance, rolling resistance, the efficiency of every loaded and unloaded gear and shaft, and the time needed to change gears. The fitness can be the time to reach top speed or the fuel consumed. Since thousands of simulations are needed, I ran them in parallel on every core of the processor. During the course, I also compared genetic algorithms, simulated annealing and Bayesian optimisation on other design problems.
               </p>
             </div>
           </div>
@@ -90,93 +90,50 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Finished part.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/7-StochasticGearboc/Gearbox graph.jpg" loading="lazy" class="img-fluid" alt="Gearbox as a graph">
               </div>
               <div class="mt-2 px-4">
-                <h3>Finished part</h3>
-                <p>The finished result of months of work, the VSI cooling block</p>
+                <h3>Gearbox as a graph</h3>
+                <p>A generated gearbox: red squares are shafts and black circles are gears, from the input to the output</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Post milling part.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/7-StochasticGearboc/Gear simulation.jpg" loading="lazy" class="img-fluid" alt="Simulation results">
               </div>
               <div class="mt-2 px-4">
-                <h3>Post milling part</h3>
-                <p>The result after I finished milling, just before I weld the top plate on</p>
+                <h3>Simulation results</h3>
+                <p>Speed, fuel consumption, engaged gear and gear ratios of the best gearbox</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Channel making.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/7-StochasticGearboc/Simulation.jpg" loading="lazy" class="img-fluid" alt="Acceleration">
               </div>
               <div class="mt-2 px-4">
-                <h3>Channel making</h3>
-                <p>Milling the channels inside the part</p>
+                <h3>Acceleration</h3>
+                <p>Simulated acceleration from 0 to 200 km/h with four gears</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Leaks testing.jpg"  loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/7-StochasticGearboc/Engine curves.jpg" loading="lazy" class="img-fluid" alt="Engine curves">
               </div>
               <div class="mt-2 px-4">
-                <h3>Leaks testing</h3>
-                <p>Leak testing the part to ensure perfect safety inside the car</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <iframe src="https://drive.google.com/file/d/1R_aGRMGoL-BIIjQVfIIQJymIl5ZCqFfS/preview"  loading="lazy" allow="autoplay" allowfullscreen></iframe>
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Transient test</h3>
-                <p>The video of a transient test of the cooling block, flowing cold water in it, when it's hot going from 60 to 20 degrees celcius in 2 seconds</p>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/v52.1.png" loading="lazy" class="img-fluid" alt="">
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Heat simulation</h3>
-                <p>Final result of the heat simulation on the top surface of the part</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/v51.2.png" loading="lazy" class="img-fluid" alt="">
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Fluid simulation</h3>
-                <p>Final result of the fluid simulation inside the channels of the part</p>
+                <h3>Engine curves</h3>
+                <p>The torque, power and fuel consumption curves used as input of the simulation</p>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarence LINDEN</title>
+    <title>Mobile robotics project | Clarence LINDEN</title>
 
     
     <!-- Favicons -->
@@ -57,7 +57,7 @@
 
         <ol>
           <li><a href="../index.html">Home</a></li>
-          <li>Racing Team</li>
+          <li>Mobile robotics project</li>
         </ol>
  
       </div>
@@ -66,17 +66,17 @@
     <section id="portfolio-title" class="portfolio-title portfolio section-bg">
       <div class="container">
         <div class="section-title">
-          <h1>Racing Team</h1>
+          <h1>Mobile robotics project</h1>
           <div class="row">
             <div class="col-12 col-lg-4">
-              <img src="../Assets/img/Portfolio/1-RacingTeam.png" loading="lazy" class="img-fluid" alt="">
+              <img src="../Assets/img/Portfolio/8-MobileRobotics.jpg" loading="lazy" class="img-fluid" alt="Mobile robotics project">
             </div>
             <div class="col-12 col-lg-8">
               <p>
-                As a Design Engineer with the EPFL Racing Team, I specialized in crafting innovative components crucial to our Formula Student racing endeavors. Collaborating within the largest team I've worked with, consisting of 90 individuals focused on a singular goal, I transformed conceptual designs into high-performance solutions, optimizing our vehicle for competitive success. From initial sketches to final production, I honed my skills in precision engineering and teamwork, ensuring our car remained at the forefront of technological advancement. My tenure with the EPFL Racing Team has fortified my commitment to excellence and equipped me with the expertise to tackle future engineering challenges with confidence and proficiency.
+                For the Basics of mobile robotics course, my team had to make a small Thymio robot reach a goal on its own, while avoiding obstacles. The project brings together every part of mobile robotics: computer vision, global path planning, filtering for localisation and local obstacle avoidance. We designed and printed our own arena, an orange grid with black obstacles and colored shapes as landmarks.
               </p>
               <p>
-                I am proudly part of the Power electronics team, but as a mechanical engineer, which means that most of the mechanical task that the team has to face is my responsibility. My first and main job was to design, simulate, build and test the cooling block of the VSI, the controler for the 4 motors of the car. With this I learned new techniques of CFD (computational fluid dynamics), with heat transfer and fluid dynamics coupled. I also learned how to program a mill to machine the part, to work with many team members from every other team, and to manage my time and my tasks. On top of the cooling block, the team made me work in close relationship with Pedro leal Chede, to make a test bench for the motor and VSI cooling. I also had to design many other small mechanical parts that the power electronics team needed.
+                A camera above the arena looks at the scene. My vision program, written with OpenCV, corrects the perspective using the four corners of the map, then detects every obstacle, shape and color as well as the position and orientation of the robot. From this map, the program builds a visibility graph and computes the shortest path to the goal. While the robot moves, a Kalman filter merges the camera measurements with the wheel odometry, so the robot still knows where it is when the camera is hidden. If an unexpected obstacle appears, the proximity sensors take over to avoid it before the robot resumes its path.
               </p>
             </div>
           </div>
@@ -90,93 +90,50 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Finished part.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/8-MobileRobotics/Camera view.jpg" loading="lazy" class="img-fluid" alt="Camera view">
               </div>
               <div class="mt-2 px-4">
-                <h3>Finished part</h3>
-                <p>The finished result of months of work, the VSI cooling block</p>
+                <h3>Camera view</h3>
+                <p>What the camera sees: the arena, the obstacles and the Thymio</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Post milling part.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/8-MobileRobotics/Vision detection.jpg" loading="lazy" class="img-fluid" alt="Vision">
               </div>
               <div class="mt-2 px-4">
-                <h3>Post milling part</h3>
-                <p>The result after I finished milling, just before I weld the top plate on</p>
+                <h3>Vision</h3>
+                <p>Perspective correction and detection of every shape and color on the map</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Channel making.jpg" loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/8-MobileRobotics/Map schema.jpg" loading="lazy" class="img-fluid" alt="Map">
               </div>
               <div class="mt-2 px-4">
-                <h3>Channel making</h3>
-                <p>Milling the channels inside the part</p>
+                <h3>Map</h3>
+                <p>The map as the program understands it, with obstacles, landmarks and the robot</p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
+            <div class="portfolio-detail-wrap">
               <div class="text-center">
 
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/Leaks testing.jpg"  loading="lazy" class="img-fluid" alt="">
+                <img src="../Assets/img/portfolioDetail/8-MobileRobotics/Visibility graph.jpg" loading="lazy" class="img-fluid" alt="Path planning">
               </div>
               <div class="mt-2 px-4">
-                <h3>Leaks testing</h3>
-                <p>Leak testing the part to ensure perfect safety inside the car</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <iframe src="https://drive.google.com/file/d/1R_aGRMGoL-BIIjQVfIIQJymIl5ZCqFfS/preview"  loading="lazy" allow="autoplay" allowfullscreen></iframe>
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Transient test</h3>
-                <p>The video of a transient test of the cooling block, flowing cold water in it, when it's hot going from 60 to 20 degrees celcius in 2 seconds</p>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/v52.1.png" loading="lazy" class="img-fluid" alt="">
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Heat simulation</h3>
-                <p>Final result of the heat simulation on the top surface of the part</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class=" portfolio-detail-wrap">
-              <div class="text-center">
-
-                <img src="../Assets/img/portfolioDetail/1-RacingTeam/v51.2.png" loading="lazy" class="img-fluid" alt="">
-              </div>
-              <div class="mt-2 px-4">
-                <h3>Fluid simulation</h3>
-                <p>Final result of the fluid simulation inside the channels of the part</p>
+                <h3>Path planning</h3>
+                <p>Visibility graph between the obstacles, used to find the shortest path</p>
               </div>
             </div>
           </div>
