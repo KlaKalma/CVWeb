@@ -56,3 +56,55 @@
 .portfolio-detail-wrap .video-short {
     aspect-ratio: 9 / 16;
 }
+
+/*--------------------------------------------------------------
+# Code and live sketches
+--------------------------------------------------------------*/
+.project-button {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    color: #E8E4B4;
+    background: #2A9D8F;
+    border: 2px solid #2A9D8F;
+    transition: 0.3s;
+}
+
+.project-button:hover {
+    color: #E8E4B4;
+    background: transparent;
+}
+
+.sketch-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    border: 2px solid #E76F51;
+    margin-bottom: 10px;
+}
+
+.sketch-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.sketch-frame button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sketch-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    transform-origin: 0 0;
+}
